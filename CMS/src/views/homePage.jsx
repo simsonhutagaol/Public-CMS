@@ -29,6 +29,7 @@ export default function Home({ urlProduct }) {
             })
             navigate(`/home`)
         } catch (err) {
+            console.log(err)
             Swal.fire({
                 icon: "error",
                 title: err.response.data.error,
@@ -46,6 +47,7 @@ export default function Home({ urlProduct }) {
             });
             setProducts(data.data);
         } catch (error) {
+            console.log(error)
             Swal.fire({
                 icon: "error",
                 title: error.response.data.error,

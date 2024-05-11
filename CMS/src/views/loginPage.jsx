@@ -15,6 +15,7 @@ export default function Login({ url }) {
             localStorage.setItem("token", data.data.access_token);
             navigate('/home')
         } catch (error) {
+            console.log(error)
             Swal.fire({
                 icon: "error",
                 title: "Login failed",

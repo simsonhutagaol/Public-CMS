@@ -18,7 +18,6 @@ export default function UpdateImage({ urlImage }) {
             });
 
             setProduct(data.data)
-            console.log(data.data, 'masuk koncet')
         } catch (err) {
             console.log(err)
             Swal.fire({
@@ -50,7 +49,6 @@ export default function UpdateImage({ urlImage }) {
     }
     useEffect(() => {
         fetchData()
-        // console.log(product, 'masuk')
     }, [])
     return (
         <>

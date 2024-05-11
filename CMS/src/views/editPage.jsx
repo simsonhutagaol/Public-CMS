@@ -32,7 +32,7 @@ export default function FormEdit({ url }) {
         e.preventDefault()
         try {
             const body = { name, description, price: +price, imgUrl, stock: +stock, categoryId: +categoryId }
-            console.log(body)
+
 
             await axios.put(`${url}/apis/branded-things/products/${id}`, body, {
                 headers: {

@@ -17,6 +17,7 @@ export default function Categories({ urlCategory }) {
             });
             setCategories(data.data);
         } catch (error) {
+            console.log(error)
             Swal.fire({
                 icon: "error",
                 title: error.response.data.error,

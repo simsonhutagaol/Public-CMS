@@ -25,6 +25,7 @@ export default function Register({ urlRegister }) {
                 title: "Registration successful"
             })
         } catch (error) {
+            console.log(error)
             Swal.fire({
                 icon: "error",
                 title: error.response.data.error
